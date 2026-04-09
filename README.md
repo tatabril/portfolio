@@ -9,23 +9,27 @@
 - Zod + React Hook Form
 
 ## Project Structure - Modular Monolith
-src
-   ├── app            // Точка сборки, глобальные стили и роутинг     
-   ├── modules        // Модули
-   │   ├── contact
-   │   ...
-   │   └── skills
-   ├── pages          // Страницы приложения 
-   └── shared
-       ├── assets     // Общие картинки
-       ├── hooks      // Общие хуки 
-       ├── lib        // Утилиты и хелперы
-       └── ui         // Stateless компоненты
+## 📂 Структура проекта
+
+```text
+src/
+├── app/                # Инициализация (провайдеры, глобальные стили, роутинг)
+├── modules/            # Изолированные бизнес-модули
+│   ├── projects/       # Витрина работ (логика + UI)
+│   ├── skills/         # Стек технологий
+│   └── contact-form/   # Форма обратной связи
+├── pages/              # Композиционные слои (страницы сайта)
+├── shared/             # Переиспользуемый фундамент
+│   ├── ui/             # UI-kit (Button, Input, Modal)
+│   ├── hooks/          # Общие React-хуки
+│   └── lib/            # Утилиты и хелперы
+└── main.tsx            # Точка входа
+```
 
 ## Getting Started
 
 ### Клонировать репозиторий
-```git clone <url>```
+```git clone https://github.com/tatabril/portfolio.git```
 
 ### Установить зависимости
 ```npm i ```
