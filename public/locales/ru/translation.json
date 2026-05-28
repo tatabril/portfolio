@@ -4,5 +4,18 @@
   "skills": "Скиллы",
   "experience": "Опыт",
   "projects": "Проекты",
-  "contact": "Контакты"
+  "contact": "Контакты",
+  "hireMe": "Резюме PDF",
+  "availableForNewOpportunities": "Открыта для новых возможностей!",
+  "building": "Татьяна Брилько — ",
+  "pixelPerfect": "React Developer",
+  "reactExperiences": "Middle+",
+  "aboutMe": "Привет! <br /> Я более 4 лет создаю веб-приложения на React и TypeScript. <br />Пишу чистый, поддерживаемый код, оптимизирую производительность и эффективно работаю в кросс-функциональных командах.",
+  "viewWork": "Посмотреть работы",
+  "contactMe": "Связаться со мной",
+  "yearsExp": "лет опыта",
+  "projectsCount": "проектов",
+  "technicalArsenal": "Технический арсенал",
+  "toolsOfTheTrade": "Технологический стек и экспертиза",
+  "toolsOfTheTradeDescription": "Использую проверенные временем инструменты и современные практики для создания масштабируемой и поддерживаемой фронтенд-архитектуры."
 }

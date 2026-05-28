@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiDownload } from 'react-icons/fi';
 import avatarImg from '@/shared/assets/images/avatar.jpg';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="top"
@@ -21,20 +24,19 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-mono mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Available for new opportunities
+            {t('availableForNewOpportunities')}
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold font-sans tracking-tight leading-tight mb-6 text-foreground">
-            Building{' '}
+            {t('building')}{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">
-              pixel-perfect
+              {t('pixelPerfect')}
             </span>{' '}
-            React experiences.
+            {t('reactExperiences')}
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg font-light leading-relaxed">
-            I'm Alex Petrov, a Senior Frontend Developer with 5 years of
-            experience crafting premium digital tools and interfaces.
+            <Trans i18nKey="aboutMe" components={{ br: <br /> }} />
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
@@ -48,7 +50,7 @@ export default function Hero() {
                   ?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              View Work <FiArrowRight />
+              {t('contactMe')} <FiArrowRight />
             </a>
             <a
               href="#contact"
@@ -60,31 +62,31 @@ export default function Hero() {
                   ?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Contact Me
+              {t('viewWork')}
             </a>
           </div>
 
           <div className="mt-12 flex items-center gap-6 text-sm text-muted-foreground font-mono">
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground font-sans">
-                5+
+                4+
               </span>
-              <span>Years Exp.</span>
+              <span>{t('yearsExp')}</span>
             </div>
             <div className="w-px h-8 bg-border" />
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground font-sans">
-                40+
+                15+
               </span>
-              <span>Projects</span>
+              <span>{t('projectsCount')}</span>
             </div>
-            <div className="w-px h-8 bg-border" />
+            {/* <div className="w-px h-8 bg-border" />
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-foreground font-sans">
                 1.2k
               </span>
-              <span>Stars</span>
-            </div>
+              <span>{t('starsCount')}</span>
+            </div> */}
           </div>
         </motion.div>
 
@@ -98,7 +100,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay pointer-events-none z-10" />
             <img
               src={avatarImg}
-              alt="Alex Petrov"
+              alt="Тата Брилько"
               className="w-full h-full object-cover rounded-xl filter grayscale hover:grayscale-0 transition-all duration-700"
             />
 
@@ -115,9 +117,9 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute top-12 -right-6 bg-card border border-border px-4 py-3 rounded-lg shadow-xl flex items-center gap-3 z-20">
+            <div className="absolute top-12 -right-2 bg-card border border-border px-4 py-3 rounded-lg shadow-xl flex items-center gap-3 z-20">
               <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-sm font-mono font-medium">React 18</span>
+              <span className="text-sm font-mono font-medium">React</span>
             </div>
           </div>
         </motion.div>

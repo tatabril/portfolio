@@ -4,5 +4,19 @@
   "skills": "Skills",
   "experience": "Experience",
   "projects": "Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+  "hireMe": "Resume PDF",
+  "availableForNewOpportunities": "Available for new opportunities",
+  "building": "Tatiana Brilko — ",
+  "pixelPerfect": "React Developer",
+  "reactExperiences": "Middle+",
+  "aboutMe": "Hello! <br /> I've been building web applications with React and TypeScript for over four years. <br />I write clean, maintainable code, optimize performance, and work effectively in cross-functional teams.",
+  "viewWork": "View Work",
+  "contactMe": "Contact Me",
+  "yearsExp": "years of exp.",
+  "projectsCount": "projects",
+  "starsCount": "stars",
+  "technicalArsenal": "Technical Arsenal",
+  "toolsOfTheTrade": "Tech stack and expertise",
+  "toolsOfTheTradeDescription": "I use time-tested tools and modern practices to create scalable and maintainable front-end architecture."
 }

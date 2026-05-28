@@ -39,11 +39,6 @@ export default function Navbar() {
     i18n.changeLanguage(lng);
   };
 
-  var isPalindrome = function (x: number) {
-    const y = [...String(x)].reverse().join('');
-    return y === String(x);
-  };
-
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -80,14 +75,6 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/alexpetrov"
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <FiGithub className="w-5 h-5" />
-          </a>
           <div className="flex items-center gap-2">
             <label
               htmlFor="lang-mode"
@@ -109,11 +96,20 @@ export default function Navbar() {
           </div>
 
           <a
+            href="https://github.com/tatabril"
+            target="_blank"
+            rel="noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <FiGithub className="w-5 h-5" />
+          </a>
+
+          <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
             className="hidden md:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
           >
-            Hire Me
+            {t('hireMe')}
           </a>
         </div>
       </div>
