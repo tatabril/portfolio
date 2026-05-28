@@ -2,17 +2,18 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import { Switch } from '@/shared/ui/switch';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { t, i18n } = useTranslation();
 
   const navLinks = [
-    { name: t('about'), href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { id: 'about', name: t('about'), href: '#about' },
+    { id: 'skills', name: t('skills'), href: '#skills' },
+    { id: 'experience', name: t('experience'), href: '#experience' },
+    { id: 'projects', name: t('projects'), href: '#projects' },
+    { id: 'contact', name: t('contact'), href: '#contact' },
   ];
 
   useEffect(() => {
@@ -33,8 +34,14 @@ export default function Navbar() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  const changeLanguage = (lng: string) => {
+  const handleLanguageChange = (checked: boolean) => {
+    const lng = checked ? 'en' : 'ru';
     i18n.changeLanguage(lng);
+  };
+
+  var isPalindrome = function (x: number) {
+    const y = [...String(x)].reverse().join('');
+    return y === String(x);
   };
 
   return (
@@ -49,25 +56,20 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <h1>{t('welcome')}</h1>
-        <div>
-          <button onClick={() => changeLanguage('en')}>English</button>
-          <button onClick={() => changeLanguage('ru')}>Русский</button>
-        </div>
         <a
           href="#"
           onClick={(e) => handleNavClick(e, '#top')}
           className="text-xl font-bold font-mono tracking-tighter text-foreground flex items-center gap-2"
         >
           <span className="text-primary">&lt;</span>
-          Alex.dev
+          tataBrilko.web
           <span className="text-primary">/&gt;</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
-              key={link.name}
+              key={link.id}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
@@ -86,14 +88,26 @@ export default function Navbar() {
           >
             <FiGithub className="w-5 h-5" />
           </a>
-          <a
-            href="https://linkedin.com/in/alexpetrov"
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <FiLinkedin className="w-5 h-5" />
-          </a>
+          <div className="flex items-center gap-2">
+            <label
+              htmlFor="lang-mode"
+              className="text-sm text-muted-foreground"
+            >
+              RU
+            </label>
+            <Switch
+              id="lang-mode"
+              onCheckedChange={handleLanguageChange}
+              checked={i18n.language === 'en'}
+            />
+            <label
+              htmlFor="lang-mode"
+              className="text-sm text-muted-foreground"
+            >
+              EN
+            </label>
+          </div>
+
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
