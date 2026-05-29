@@ -18,5 +18,18 @@
   "starsCount": "stars",
   "technicalArsenal": "Technical Arsenal",
   "toolsOfTheTrade": "Tech stack and expertise",
-  "toolsOfTheTradeDescription": "I use time-tested tools and modern practices to create scalable and maintainable front-end architecture."
+  "toolsOfTheTradeDescription": "I use time-tested tools and modern practices to create scalable and maintainable front-end architecture.",
+  "stack": {
+    "titles": {
+      "core": "Core Stack",
+      "state": "State Management",
+      "styling": "Styling & UI Libraries",
+      "tools": "Development Tools",
+      "practices": "Engineering Practices"
+    },
+    "skills": {
+      "techDoc": "Technical Documentation",
+      "archDesign": "Architecture Design"
+    }
+  }
 }
