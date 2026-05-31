@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FiBriefcase, FiCalendar } from 'react-icons/fi';
+import { FiCalendar } from 'react-icons/fi';
 
 export default function Experience() {
   const { t } = useTranslation();
@@ -68,7 +68,6 @@ export default function Experience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative pl-8 md:pl-12"
             >
-              {/* Timeline dot */}
               <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-background" />
 
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">

@@ -67,5 +67,12 @@
       "type": "Unified digital ecosystem for railway logistics",
       "description": "A large-scale B2B platform designed to automate logistics and match cargo supply with demand. Developed complex multi-step wizard forms from scratch, configured automated API client generation using Orval, and covered key UI components with Storybook stories."
     }
+  },
+  "contact": {
+    "badge": "WHAT'S NEXT?",
+    "title": "Get In Touch",
+    "description": "I am currently looking for new opportunities as a Middle Frontend Developer. If you have an open position that matches my skills, want to schedule a technical interview, or just discuss a job opportunity, feel free to reach out!",
+    "location": "Rostov-on-Don // Remote, Hybrid, On-site",
+    "mailto": "Send Email"
   }
 }
