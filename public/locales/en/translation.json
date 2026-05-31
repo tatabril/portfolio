@@ -74,5 +74,8 @@
     "description": "I am currently looking for new opportunities as a Middle Frontend Developer. If you have an open position that matches my skills, want to schedule a technical interview, or just discuss a job opportunity, feel free to reach out!",
     "location": "Rostov-on-Don // Remote, Hybrid, On-site",
     "mailto": "Send Email"
+  },
+  "footer": {
+    "coopirate": "Tata Brilko. Built with React & Tailwind."
   }
 }

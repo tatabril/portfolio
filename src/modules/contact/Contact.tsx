@@ -5,6 +5,7 @@ import iconMax from '@/shared/assets/icons/iconMax.svg';
 
 export default function Contact() {
   const { t } = useTranslation();
+
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-primary/5 rounded-t-[100%] blur-[100px] pointer-events-none" />
@@ -29,15 +30,10 @@ export default function Contact() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-6 mb-10 text-muted-foreground font-mono text-sm">
-            <a
-              href="https://max.ru/u/f9LHodD0cOJ8c1gEdwmP01pjcl97fwgVrTyaOCcz5AlTQwwOMHxPaUtLF2Y"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
+            <div className="flex items-center gap-2">
               <img src={iconMax} alt="max" className="h-5 w-5" />
               Tata Brilko
-            </a>
+            </div>
             <div className="flex items-center gap-2">
               <FiMail className="text-primary" />
               <span>tatabrilko.web@gmail.com</span>
