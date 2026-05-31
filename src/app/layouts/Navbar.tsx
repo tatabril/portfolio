@@ -9,11 +9,11 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
 
   const navLinks = [
-    { id: 'about', name: t('about'), href: '#about' },
-    { id: 'skills', name: t('skills'), href: '#skills' },
-    { id: 'experience', name: t('experience'), href: '#experience' },
-    { id: 'projects', name: t('projects'), href: '#projects' },
-    { id: 'contact', name: t('contact'), href: '#contact' },
+    { id: 'about', name: t('navigation.about'), href: '#about' },
+    { id: 'skills', name: t('navigation.skills'), href: '#skills' },
+    { id: 'experience', name: t('navigation.experience'), href: '#experience' },
+    { id: 'projects', name: t('navigation.projects'), href: '#projects' },
+    { id: 'contact', name: t('navigation.contact'), href: '#contact' },
   ];
 
   useEffect(() => {
@@ -109,7 +109,7 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, '#contact')}
             className="hidden md:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
           >
-            {t('hireMe')}
+            {t('navigation.hireMe')}
           </a>
         </div>
       </div>

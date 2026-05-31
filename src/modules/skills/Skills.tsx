@@ -8,21 +8,6 @@ import {
 } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 
-const skills = {
-  Core: ['React', 'TypeScript', 'JavaScript (ES6+)'],
-  State: ['Zustand', 'Redux Toolkit', 'React Query', 'Context API'],
-  Styling: [
-    'Tailwind CSS',
-    'CSS Modules',
-    'Styled Components',
-    'shadcn/ui',
-    'MUI / Ant Design',
-    'Framer Motion',
-  ],
-  Tools: ['Git', 'Vite / Webpack', 'Docker', 'Storybook', 'VS Code / Cursor'],
-  Soft: ['Code Review', 'Technical Documentation', 'Architecture'],
-};
-
 export const techStackData = [
   {
     id: 'core',
@@ -168,44 +153,6 @@ export default function Skills() {
               </ul>
             </motion.div>
           ))}
-
-          {/* {Object.entries(skills).map(([category, items]) => (
-            <motion.div
-              key={category}
-              variants={itemVariants}
-              className="bg-card border border-border/50 rounded-xl p-6 hover:border-primary/30 transition-colors group relative overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-
-              <h4 className="text-xl font-semibold mb-4 text-foreground flex items-center gap-2">
-                {category === 'Core' && <FiCode className="text-primary" />}
-                {category === 'Tools' && (
-                  <FiTerminal className="text-primary" />
-                )}
-                {category === 'Styling' && (
-                  <FiLayout className="text-primary" />
-                )}
-                {category !== 'Core' &&
-                  category !== 'Tools' &&
-                  category !== 'Styling' && (
-                    <FiLayers className="text-primary" />
-                  )}
-                {category}
-              </h4>
-
-              <ul className="space-y-3 relative z-10">
-                {items.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-muted-foreground font-mono text-sm"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))} */}
         </motion.div>
       </div>
     </section>

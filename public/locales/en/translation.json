@@ -1,11 +1,12 @@
 {
-  "welcome": "Welcome to React",
-  "about": "About",
-  "skills": "Skills",
-  "experience": "Experience",
-  "projects": "Projects",
-  "contact": "Contact",
-  "hireMe": "Resume PDF",
+  "navigation": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Resume PDF"
+  },
   "availableForNewOpportunities": "Available for new opportunities",
   "building": "Tatiana Brilko — ",
   "pixelPerfect": "React Developer",
@@ -30,6 +31,41 @@
     "skills": {
       "techDoc": "Technical Documentation",
       "archDesign": "Architecture Design"
+    }
+  },
+  "career": {
+    "badge": "Career Journey",
+    "title": "Professional Experience",
+    "intern": {
+      "description": "Contributed to a React/TypeScript startup and built web applications from scratch, mastering core UI patterns and state management."
+    },
+    "junior": {
+      "description": "Completed 3+ projects using React for international and domestic clients, taking into account modern front-end templates and flexible development methodologies (Agile/Scrum)."
+    },
+    "middle": {
+      "description": "Developed high-performance React applications from scratch utilizing Vite, Zustand, and React Query. Integrated Keycloak auth, Docker containers, and Storybook components, optimizing workflow with AI assistants."
+    }
+  },
+  "projects": {
+    "badge": "Selected Works",
+    "title": "Featured Projects",
+    "codePlaceholder": "<Code Visualization />",
+    "nda": "NDA Protected",
+    "ndaTooltip": "The source code and live site are confidential under a Non-Disclosure Agreement.",
+    "shopkit": {
+      "title": "Fintech | Risk Monitoring Platform",
+      "type": "Internal admin service for statistical data collection",
+      "description": "A high-load analytical dashboard (Event/Market Liability Monitor) built for internal risk tracking. Implemented a complex system of interconnected filters and multi-criteria sorting, engineered efficient server-side pagination for data-dense tables, and optimized React Query caching for seamless data auto-updates."
+    },
+    "bcs": {
+      "title": "BCS | Internal Banking Application",
+      "type": "A fintech platform designed for corporate document generation, validation, and processing.",
+      "description": "Successfully migrated the application's global design system from MUI to Ant Design. Led the modernization of legacy UI, developed robust dynamic forms with complex state validation (React Hook Form), and optimized data-heavy filtering components."
+    },
+    "eis": {
+      "title": "EIS",
+      "type": "Unified digital ecosystem for railway logistics",
+      "description": "A large-scale B2B platform designed to automate logistics and match cargo supply with demand. Developed complex multi-step wizard forms from scratch, configured automated API client generation using Orval, and covered key UI components with Storybook stories."
     }
   }
 }
