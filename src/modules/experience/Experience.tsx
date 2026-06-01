@@ -2,52 +2,45 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FiCalendar } from 'react-icons/fi';
 
+const experiences = [
+  {
+    role: 'Middle Frontend Developer',
+    company: 'Umbrella IT',
+    period: '2024 – Present',
+    description: 'career.middle.description',
+    tags: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Shadcn/ui',
+      'Ant Design',
+      'Orval',
+      'Storybook',
+      'Zustand',
+      'Cursor',
+    ],
+  },
+  {
+    role: 'Junior Frontend Developer',
+    company: 'Umbrella IT',
+    period: '2022 – 2023',
+    description: 'career.junior.description',
+    tags: ['React', 'JavaScript', 'TypeScript', 'MUI', 'Webpack', 'Redux Saga'],
+  },
+  {
+    role: 'Intern Frontend Developer',
+    company: 'Umbrella IT',
+    period: '2021 - 2022',
+    description: 'career.intern.description',
+    tags: ['HTML5', 'CSS/SASS', 'React', 'JavaScript', 'Git'],
+  },
+];
+
 export default function Experience() {
   const { t } = useTranslation();
 
-  const experiences = [
-    {
-      role: 'Middle Frontend Developer',
-      company: 'Umbrella IT',
-      period: '2024 – Present',
-      description: 'career.middle.description',
-      tags: [
-        'React',
-        'TypeScript',
-        'Vite',
-        'Shadcn/ui',
-        'Ant Design',
-        'Orval',
-        'Storybook',
-        'Zustand',
-        'Cursor',
-      ],
-    },
-    {
-      role: 'Junior Frontend Developer',
-      company: 'Umbrella IT',
-      period: '2022 – 2023',
-      description: 'career.junior.description',
-      tags: [
-        'React',
-        'JavaScript',
-        'TypeScript',
-        'MUI',
-        'Webpack',
-        'Redux Saga',
-      ],
-    },
-    {
-      role: 'Intern Frontend Developer',
-      company: 'Umbrella IT',
-      period: '2021 - 2022',
-      description: 'career.intern.description',
-      tags: ['HTML5', 'CSS/SASS', 'React', 'JavaScript', 'Git'],
-    },
-  ];
-
   return (
-    <section id="experience" className="py-24 relative">
+    <section id="experience" className="py-16 lg:py-24 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-2xl mb-16">
           <h2 className="text-sm font-mono text-primary mb-2 uppercase tracking-wider">
@@ -58,7 +51,7 @@ export default function Experience() {
           </h3>
         </div>
 
-        <div className="relative border-l border-border/50 ml-4 md:ml-6 space-y-12 pb-8">
+        <div className="relative border-l border-border/50 ml-4 md:ml-6 space-y-12 pb-4 lg:pb-8">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}

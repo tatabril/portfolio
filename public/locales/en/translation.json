@@ -16,11 +16,10 @@
   "contactMe": "Contact Me",
   "yearsExp": "years of exp.",
   "projectsCount": "projects",
-  "starsCount": "stars",
-  "technicalArsenal": "Technical Arsenal",
-  "toolsOfTheTrade": "Tech stack and expertise",
-  "toolsOfTheTradeDescription": "I use time-tested tools and modern practices to create scalable and maintainable front-end architecture.",
   "stack": {
+    "technicalArsenal": "Technical Arsenal",
+    "toolsOfTheTrade": "Tech stack and expertise",
+    "toolsOfTheTradeDescription": "I use time-tested tools and modern practices to create scalable and maintainable front-end architecture.",
     "titles": {
       "core": "Core Stack",
       "state": "State Management",

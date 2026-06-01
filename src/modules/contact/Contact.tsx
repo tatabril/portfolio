@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-16 lg:py-24 relative overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-primary/5 rounded-t-[100%] blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">

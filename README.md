@@ -1,14 +1,15 @@
 # Portfolio Showcase - React front-end developer
 
 ## Tech Stack
+
 - React 18 (Hooks, Context API)
-- Tailwind CSS v4
+- Tailwind CSS v3
 - Vite 6
-- TanStack Query
 - Radix UI (Primitives) + Framer Motion (анимации)
 - Zod + React Hook Form
 
 ## Project Structure - Modular Monolith
+
 ## 📂 Структура проекта
 
 ```text
@@ -29,15 +30,15 @@ src/
 ## Getting Started
 
 ### Клонировать репозиторий
-```git clone https://github.com/tatabril/portfolio.git```
+
+`git clone https://github.com/tatabril/portfolio.git`
 
 ### Установить зависимости
-```npm i ```
+
+`npm i `
 
 ### Запустить поект
-```npm run dev```
+
+`npm run dev`
 
 ## Decision Log
-
-
-

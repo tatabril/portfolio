@@ -76,18 +76,18 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 bg-card/30 border-y border-border/50 relative"
+      className="py-16 lg:py-24 bg-card/30 border-y border-border/50 relative"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-2xl mb-16">
           <h2 className="text-sm font-mono text-primary mb-2 uppercase tracking-wider">
-            {t('technicalArsenal')}
+            {t('stack.technicalArsenal')}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold font-sans text-foreground">
-            {t('toolsOfTheTrade')}
+            {t('stack.toolsOfTheTrade')}
           </h3>
           <p className="mt-4 text-muted-foreground text-lg font-light">
-            {t('toolsOfTheTradeDescription')}
+            {t('stack.toolsOfTheTradeDescription')}
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function Skills() {
               variants={itemVariants}
               className="bg-card border border-border/50 rounded-xl p-6 hover:border-primary/30 transition-colors group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
               <h4 className="text-xl font-semibold mb-4 text-foreground flex items-center gap-2">
                 {category.id === 'core' && <FiCode className="text-primary" />}
@@ -117,12 +117,9 @@ export default function Skills() {
                 {category.id === 'practices' && (
                   <FiActivity className="text-primary" />
                 )}
-                {category.id !== 'core' && // TODO icons add in techStackData
-                  category.id !== 'tools' &&
-                  category.id !== 'styling' &&
-                  category.id !== 'practices' && (
-                    <FiLayers className="text-primary" />
-                  )}
+                {category.id === 'state' && (
+                  <FiLayers className="text-primary" />
+                )}
                 {t(category.titleKey)}
               </h4>
 

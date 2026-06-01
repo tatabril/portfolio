@@ -34,6 +34,7 @@ export default function Navbar() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   const handleLanguageChange = (checked: boolean) => {
     const lng = checked ? 'en' : 'ru';
     i18n.changeLanguage(lng);
@@ -54,14 +55,14 @@ export default function Navbar() {
         <a
           href="#"
           onClick={(e) => handleNavClick(e, '#top')}
-          className="text-xl font-bold font-mono tracking-tighter text-foreground flex items-center gap-2"
+          className="text-lg lg:text-xl font-bold font-mono tracking-tighter text-foreground flex items-center gap-2"
         >
           <span className="text-primary">&lt;</span>
-          tataBrilko.web
+          <span>tataBrilko.web</span>
           <span className="text-primary">/&gt;</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.id}
@@ -107,7 +108,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="hidden md:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
+            className="hidden lg:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
           >
             {t('navigation.hireMe')}
           </a>
