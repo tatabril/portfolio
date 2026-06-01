@@ -40,6 +40,10 @@ export default function Navbar() {
     i18n.changeLanguage(lng);
   };
 
+  const handleOpenResume = () => {
+    window.open('/resume.pdf', '_blank');
+  };
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -107,7 +111,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            onClick={(e) => handleNavClick(e, '#contact')}
+            onClick={handleOpenResume}
             className="hidden lg:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
           >
             {t('navigation.hireMe')}
