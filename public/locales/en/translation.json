@@ -76,5 +76,10 @@
   },
   "footer": {
     "coopirate": "Tata Brilko. Built with React & Tailwind."
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "description": "Go to home page",
+    "button": "Home"
   }
 }

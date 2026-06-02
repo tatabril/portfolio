@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { Switch } from '@/shared/ui/switch';
+import { Button } from '@/shared/ui';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -109,13 +110,14 @@ export default function Navbar() {
             <FiGithub className="w-5 h-5" />
           </a>
 
-          <a
-            href="#contact"
+          <Button
+            variant="secondary"
+            size="default"
             onClick={handleOpenResume}
-            className="hidden lg:flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
+            className="hidden lg:flex items-center justify-center bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
           >
             {t('navigation.hireMe')}
-          </a>
+          </Button>
         </div>
       </div>
     </motion.header>

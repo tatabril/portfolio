@@ -1,11 +1,13 @@
-import { Route, Router } from 'wouter';
+import { Switch, Route } from 'wouter';
 import Home from '@/pages/Home';
+import NotFound from '@/pages/NotFound';
 
 const Routers = () => {
   return (
-    <Router>
+    <Switch>
       <Route path="/" component={Home} />
-    </Router>
+      <Route component={NotFound} />
+    </Switch>
   );
 };
 
