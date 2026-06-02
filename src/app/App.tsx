@@ -1,28 +1,19 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/shared/ui/toaster";
-import { TooltipProvider } from "@/shared/ui/tooltip";
-import Home from "@/pages/Home";
-import NotFound from "@/pages/not-found";
+import { Router } from 'wouter';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Toaster } from '@/shared/ui/toaster';
+import { TooltipProvider } from '@/shared/ui/tooltip';
+
+import Routers from './Routers';
 
 const queryClient = new QueryClient();
-
-function Router() {
-  return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
-        </WouterRouter>
+        <Router base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+          <Routers />
+        </Router>
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

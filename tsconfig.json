@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
-    "types": ["node", "vite/client"],
+    "types": ["node", "vite/client", "i18next"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
