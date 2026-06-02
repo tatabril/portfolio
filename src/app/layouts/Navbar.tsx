@@ -41,7 +41,7 @@ export default function Navbar() {
   };
 
   const handleOpenResume = () => {
-    window.open('/resume.pdf', '_blank');
+    window.open('./resume.pdf', '_blank');
   };
 
   return (
