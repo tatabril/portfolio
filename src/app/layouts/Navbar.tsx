@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { Switch } from '@/shared/ui/switch';
-import { Button } from '@/shared/ui';
+import { Button, Switch } from '@/shared/ui';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

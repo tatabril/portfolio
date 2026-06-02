@@ -12,7 +12,10 @@ const dirname =
     : path.dirname(fileURLToPath(import.meta.url));
 
 const port = Number(process.env.PORT || 3000);
-const basePath = process.env.BASE_PATH || '/';
+const isGitHubPages =
+  process.env.NODE_ENV === 'production' && !process.env.PORT;
+const basePath = isGitHubPages ? '/portfolio/' : process.env.BASE_PATH || '/';
+
 export default defineConfig({
   base: basePath,
   plugins: [react(), tailwindcss()],
